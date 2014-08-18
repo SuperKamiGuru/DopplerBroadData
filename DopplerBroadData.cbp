@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DopplerBroadData" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DopplerBroadData" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DopplerBroadData" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="DopplerBroad.cc" />
+		<Unit filename="include/ElementNames.hh" />
+		<Unit filename="include/G4NucleiPropertiesTableAME03.hh" />
+		<Unit filename="include/G4NucleiPropertiesTheoreticalTable.hh" />
+		<Unit filename="include/Random/DoubConv.h" />
+		<Unit filename="include/Random/DualRand.h" />
+		<Unit filename="include/Random/EngineFactory.h" />
+		<Unit filename="include/Random/RandFlat.h" />
+		<Unit filename="include/Random/RandFlat.icc" />
+		<Unit filename="include/Random/RandGauss.h" />
+		<Unit filename="include/Random/RandGauss.icc" />
+		<Unit filename="include/Random/RandGaussQ.h" />
+		<Unit filename="include/Random/RandGaussQ.icc" />
+		<Unit filename="include/Random/Random.h" />
+		<Unit filename="include/Random/Random.icc" />
+		<Unit filename="include/Random/RandomEngine.h" />
+		<Unit filename="include/Random/RandomEngine.icc" />
+		<Unit filename="include/Random/RanecuEngine.h" />
+		<Unit filename="include/Random/SeedTable.h" />
+		<Unit filename="include/Random/StaticRandomStates.h" />
+		<Unit filename="include/Random/engineIDulong.h" />
+		<Unit filename="include/Random/gaussQTables.cdat" />
+		<Unit filename="include/Random/gaussTables.cdat" />
+		<Unit filename="include/Utility/defs.h" />
+		<Unit filename="include/Utility/memory.h" />
+		<Unit filename="include/Utility/noncopyable.h" />
+		<Unit filename="include/Utility/type_traits.h" />
+		<Unit filename="include/zlib.h" />
+		<Unit filename="src/DoubConv.cc" />
+		<Unit filename="src/DualRand.cc" />
+		<Unit filename="src/ElementNames.cc" />
+		<Unit filename="src/EngineFactory.cc" />
+		<Unit filename="src/G4NucleiPropertiesTableAME03.cc" />
+		<Unit filename="src/G4NucleiPropertiesTheoreticalTableA.cc" />
+		<Unit filename="src/G4NucleiPropertiesTheoreticalTableB.cc" />
+		<Unit filename="src/RandFlat.cc" />
+		<Unit filename="src/RandGauss.cc" />
+		<Unit filename="src/RandGaussQ.cc" />
+		<Unit filename="src/Random.cc" />
+		<Unit filename="src/RandomEngine.cc" />
+		<Unit filename="src/RanecuEngine.cc" />
+		<Unit filename="src/StaticRandomStates.cc" />
+		<Unit filename="src/adler32.cc" />
+		<Unit filename="src/compress.cc" />
+		<Unit filename="src/crc32.cc" />
+		<Unit filename="src/crc32.h" />
+		<Unit filename="src/deflate.cc" />
+		<Unit filename="src/deflate.h" />
+		<Unit filename="src/engineIDulong.cc" />
+		<Unit filename="src/gzclose.cc" />
+		<Unit filename="src/gzguts.h" />
+		<Unit filename="src/gzlib.cc" />
+		<Unit filename="src/gzread.cc" />
+		<Unit filename="src/gzwrite.cc" />
+		<Unit filename="src/infback.cc" />
+		<Unit filename="src/inffast.cc" />
+		<Unit filename="src/inffast.h" />
+		<Unit filename="src/inffixed.h" />
+		<Unit filename="src/inflate.cc" />
+		<Unit filename="src/inflate.h" />
+		<Unit filename="src/inftrees.cc" />
+		<Unit filename="src/inftrees.h" />
+		<Unit filename="src/trees.cc" />
+		<Unit filename="src/trees.h" />
+		<Unit filename="src/uncompr.cc" />
+		<Unit filename="src/zconf.h.cmakein" />
+		<Unit filename="src/zutil.cc" />
+		<Unit filename="src/zutil.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
