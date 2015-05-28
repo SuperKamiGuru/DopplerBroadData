@@ -39,7 +39,7 @@ void ElementNames::SetElementNames()
     elementName[12] = "Magnesium";
     elementName[13] = "Aluminum";
     elementName[14] = "Silicon";
-    elementName[15] = "Phosphorus";
+    elementName[15] = "Phosphorous";
     elementName[16] = "Sulfur";
     elementName[17] = "Chlorine";
     elementName[18] = "Argon";

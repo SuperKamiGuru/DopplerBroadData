@@ -41,6 +41,7 @@ using namespace std;
 // X take sudo or root password so that it can create files in root protected areas
 // X sort the list of input CS files from the macrofile by temperature and isotope so that isotopes with highier temperatures will be broaden from the output of those with lower temp
 // X get program to use natural elements when isotopes are unavailable
+// X change precision of CS to be within 0.1%
 // allow the program to run in parrallel
 // create a small code that will filter out points in flat regions and use it before and after DopplerBroad in or to improve the speed of Doppler Broad and G4Stork
 // create small code to convert from endf NIST and MCNP to G4NDL
@@ -1847,7 +1848,7 @@ int DoppBroad(string inFileName, string outFileName, double prevTemp, double new
         nVMag = nPx*invNMassC2;
         invNVMag = 1/nVMag;
 
-        while(counter == 0 || (/*counter < numMaxOL && */std::abs(buffer-result/std::max(1,counter)) > 0.003*buffer))
+        while(counter == 0 || (/*counter < numMaxOL && */std::abs(buffer-result/std::max(1,counter)) > 0.001*buffer))
         {
             if(counter)
                 buffer = result/counter;
